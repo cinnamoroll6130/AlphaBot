@@ -13,6 +13,7 @@ export type TradingWallet = {
   wallet: Wallet
   thorchainAmm: ThorchainAMM
 }
+
 export type TxDetail = {
   date: Date
   action: string
@@ -29,12 +30,13 @@ export enum BotMode {
   runIdle = 'runIdle',
   stop = 'stop',
 }
+
 export enum TradingMode {
-    buy = 'buy',
-    sell = 'sell',
-    hold = 'hold',
-    paused = 'paused',
-    trade = 'trade'
+  buy = 'buy',
+  sell = 'sell',
+  hold = 'hold',
+  paused = 'paused',
+  trade = 'trade',
 }
 
 export type ExponentialMovingAverage = {
@@ -76,6 +78,7 @@ export type Action = {
   price: PriceData
   rsi: number
 }
+
 export type Time = {
   timeInSeconds: Number
   timeInMinutes: Number
@@ -91,8 +94,8 @@ export type Signal = {
 }
 
 export type RuneBalance = {
-  asset: AnyAsset;
-  amount: BaseAmount;
+  asset: AnyAsset
+  amount: BaseAmount
 }
 
 export type ParabolicSar = {
@@ -112,19 +115,17 @@ export type HighAndLow = {
 }
 
 export type TradeAnalysis = {
-    tradeSignal: string
-    tradeType: TradingMode
+  tradeSignal: string
+  tradeType: TradingMode
 }
 
 export type Order = {
-    price: number
-    quantity: number
+  price: number
+  quantity: number
 }
 
 export enum Direction {
-    Upward = "Upward",
-    Downward = "Downward",
-    Stable = "Stable",
-  }
-  
-  
+  Upward = 'Upward',
+  Downward = 'Downward',
+  Stable = 'Stable',
+}
